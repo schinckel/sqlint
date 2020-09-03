@@ -7,7 +7,7 @@ module SQLint
     END_PARSE = ParseState.new(nil, nil)
 
     def initialize(filename, input_stream)
-      @input = input_stream.read.gsub(/(?<!')%s(?!')/, "'%s'")
+      @input = input_stream.read.gsub(/(?<=\W)(?<!')%s(?!')(?=\W|$)/, "'%s'")
       @filename = filename
     end
 
