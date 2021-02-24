@@ -1,12 +1,12 @@
 # encoding: utf-8
 
 $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
-require 'sqlint'
+# require 'sqlint'
 require 'English'
 
 Gem::Specification.new do |s|
   s.name = 'sqlint'
-  s.version = SQLint::VERSION
+  s.version = '0.1.11'
   s.platform = Gem::Platform::RUBY
   s.required_ruby_version = '>= 1.9.3'
   s.authors = ['Steve Purcell', 'Kieran Trezona-le Comte']
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.test_files = []
   s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.extra_rdoc_files = ['LICENSE.txt', 'README.md']
-  s.homepage = 'https://github.com/purcell/sqlint'
+  s.homepage = 'https://github.com/schinckel/sqlint'
   s.licenses = ['MIT']
   s.require_paths = ['lib']
   s.rubygems_version = '1.8.23'
